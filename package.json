@@ -1,0 +1,36 @@
+{
+  "name": "edgio-static-vuejs-example",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "tailwindcss:watch": "npx tailwindcss -i ./src/input.css -o ./src/compiled/output.css --watch",
+    "tailwindcss:build": "npx tailwindcss -i ./src/input.css -o ./src/compiled/output.css",
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
+    "edgio:production": "edgio run --production",
+    "format": "prettier --write '**/*' --ignore-unknown"
+  },
+  "dependencies": {
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@edgio/cli": "^6.1.2",
+    "@edgio/core": "^6.1.2",
+    "@edgio/devtools": "^6.1.2",
+    "@edgio/prefetch": "^6.1.2",
+    "@edgio/rum": "^5.0.8",
+    "@edgio/vue": "^6.1.2",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.6"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": "git@github.com:edgio-docs/edgio-static-vuejs-example.git"
+}
